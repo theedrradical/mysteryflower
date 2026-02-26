@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #feffee;
+}
+canvas {
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 500px;
+    max-width: 90vw;
+    max-height: 90vw;
+    margin-top: 0px;
+    background:  #ffaaf5d1;
+    border: 10px solid #86efff;
+    border-radius: 100px;
+}
+
+/* Override canvas size for mobile - this ensures mobile styles take precedence */
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+    color: #ffaaf5d1;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(134, 239, 255, 0.3);
+}
+p {
+    font-family: 'Apple Chancery', cursive;
+    font-size: 26px;
+    color: #544531;
+    margin-top: -10px;
+}
+#potCanvas {
+    cursor: pointer; /* Shows it's clickable */
+}
+
+button {
+    border: 3px solid #86bcff;
+    border-radius: 40px;
+    background: #86efff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #86bcff;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Hide the button if you want */
+#growBtn {
+    display: none;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        min-height: 100%;
+    }
+    
+    h1 {
+        font-size: 48px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 32px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    
+    canvas {
+        width: 90vw !important;
+        height: 90vw !important;
+        max-width: 90vw !important;
+        max-height: 90vw !important;
+        border-width: 8px;
+        margin-top: 10px;
+    }
+    
+    button {
+        font-size: 20px;
+        padding: 15px 30px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 42px;
+    }
+    
+    p {
+        font-size: 28px;
+    }
+    
+    canvas {
+        width: 95vw !important;
+        height: 95vw !important;
+        max-width: 95vw !important;
+        max-height: 95vw !important;
+        border-width: 6px;
+    }
+}
