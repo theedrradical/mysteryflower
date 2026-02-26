@@ -11,8 +11,6 @@ canvas {
     border: 1px solid #ccc;
     width: 500px;
     height: 500px;
-    max-width: 90vw;
-    max-height: 90vw;
     margin-top: 0px;
     background:  #ffaaf5d1;
     border: 10px solid #86efff;
